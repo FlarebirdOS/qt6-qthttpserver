@@ -1,6 +1,6 @@
 pkgname=qt6-qthttpserver
-pkgver=6.9.2
-pkgrel=1
+pkgver=6.10.0
+pkgrel=2
 pkgdesc="Qt HTTP Server"
 arch=('x86_64')
 url="https://www.qt.io"
@@ -22,7 +22,7 @@ makedepends=(
     'ninja'
 )
 source=(git+https://code.qt.io/qt/${pkgname#*-}#tag=v${pkgver})
-sha256sums=(825d0eaff8457b5971ad32255c9a34c6cea320784a6475c1236e2202710b8e49)
+sha256sums=(873c349a7a83a086b502c07be28cf110615f81b00f7e8ba8a99e3de1c8357a02)
 
 build() {
     cd ${pkgname#*-}
